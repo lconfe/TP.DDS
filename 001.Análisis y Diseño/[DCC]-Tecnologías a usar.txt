@@ -1,4 +1,4 @@
 IDEs: Eclipse - Enterprise Architect -
-DB: MySQL o MSQL
+DB: MySQL / MSQL / Mongo DB.
 Lenguaje: Java.
 Modelado: UML.
