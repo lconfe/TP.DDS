@@ -1,5 +1,5 @@
 package temporal;
-import entidad.POI;
+import entidad.Ent_POI;
 
 public class Banco extends POI
 {

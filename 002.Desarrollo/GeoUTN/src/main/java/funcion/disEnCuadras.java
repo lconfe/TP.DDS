@@ -4,8 +4,8 @@
  * */
 package funcion;
 
-import interfaz.POI;
-import interfaz.GeoPos;
+import entidad.Ent_GeoPos;
+import entidad.Ent_POI;
 
 import java.lang.Math;
 
@@ -20,14 +20,14 @@ public class disEnCuadras
 		return valEnKm/1000;
 	}
 
-	public static int main(POI unPOI, GeoPos unaPosicion)
+	public static int main(Ent_POI unPOI, Ent_GeoPos unaPosicion)
 	{
 		double radT = 6378.137; //Radio de la tierra en KM.		
-		double dLat = aRad(unPOI.get - unaPosicion.getLatitud());
-		double dLon = aRad(unPOI.Longitud - unaPosicion.getLongitud());
+		double dLat = aRad(unPOI.getLatitud() - unaPosicion.getLatitud());
+		double dLon = aRad(unPOI.getLongitud() - unaPosicion.getLongitud());
 		
 		double a = Math.sin(dLat/2) * Math.sin(dLat/2)
-				 + Math.cos(aRad(unPOI.Latitud))
+				 + Math.cos(aRad(unPOI.getLatitud()))
 				 * Math.cos(aRad(unaPosicion.getLatitud())) 
 				 * Math.sin(dLon/2) * Math.sin(dLon/2);
 
