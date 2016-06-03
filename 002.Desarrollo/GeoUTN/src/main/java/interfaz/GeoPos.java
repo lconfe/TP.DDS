@@ -1,7 +1,8 @@
 package interfaz;
 
+import entidad.Ent_GeoPos;
+
 public interface GeoPos {
 	/* Constructor: */
-    public void setGeoPos(float unaLatitud, float unaLongitud);
-    
+    public Ent_GeoPos setGeoPos(float unaLatitud, float unaLongitud);
 }

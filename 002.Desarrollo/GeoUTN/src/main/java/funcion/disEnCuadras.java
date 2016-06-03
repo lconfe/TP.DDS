@@ -23,7 +23,7 @@ public class disEnCuadras
 	public static int main(POI unPOI, GeoPos unaPosicion)
 	{
 		double radT = 6378.137; //Radio de la tierra en KM.		
-		double dLat = aRad(unPOI.Latitud  - unaPosicion.getLatitud());
+		double dLat = aRad(unPOI.get - unaPosicion.getLatitud());
 		double dLon = aRad(unPOI.Longitud - unaPosicion.getLongitud());
 		
 		double a = Math.sin(dLat/2) * Math.sin(dLat/2)

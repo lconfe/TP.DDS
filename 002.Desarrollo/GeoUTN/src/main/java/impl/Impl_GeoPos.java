@@ -6,8 +6,9 @@ import interfaz.GeoPos;
 public class Impl_GeoPos implements GeoPos {
 	private Ent_GeoPos _GeoPos;
 	
-    public void setGeoPos(float unaLatitud, float unaLongitud){
+    public Ent_GeoPos setGeoPos(float unaLatitud, float unaLongitud){
     	_GeoPos.setLatitud(unaLatitud);
     	_GeoPos.setLongitud(unaLongitud);
-    };
+    	return _GeoPos;
+    };    
 }

@@ -6,9 +6,10 @@ import interfaz.Dir;
 public class Impl_Dir implements Dir {
 	private Ent_Dir _Dir;
 	
-    public void setDir(String unaCalle, int unNroDeCalle, String unCodPostal,
-    					 String unaCalleIzq, String unaCalleDer, String unDepto,
-    					 int unNroDePiso){
+    public Ent_Dir setDir(String unaCalle, int unNroDeCalle, String unCodPostal,
+    					  String unaCalleIzq, String unaCalleDer, String unDepto,
+    					  int unNroDePiso){
+    	
     	_Dir.setCalle(unaCalle);
     	_Dir.setCalleNro(unNroDeCalle);
     	_Dir.setCodPostal(unCodPostal);
@@ -16,6 +17,8 @@ public class Impl_Dir implements Dir {
     	_Dir.setEntreCalleDer(unaCalleDer);
     	_Dir.setDepto(unDepto);
     	_Dir.setDeptoPiso(unNroDePiso);
+    
+    	return _Dir;
     };
 
 
