@@ -1,13 +1,13 @@
 package GeoUTN;
 
 /**
- * Hello world!
+ * Clase inicial que lanza el proyecto.
  *
  */
 public class GeoUTN 
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        System.out.println( "Blah!" );
     }
 }
