@@ -1,3 +1,4 @@
+package temporal;
 
 public class Kiosco extends Local
 {

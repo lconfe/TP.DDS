@@ -1,3 +1,4 @@
+package temporal;
 import entidad.POI;
 
 public class Local extends POI
