@@ -1,5 +1,6 @@
+import entidad.POI;
 
-public class ParadaColectivo extends Poi
+public class ParadaColectivo extends POI
 {
 
 	public ParadaColectivo(int capacidadInicial)

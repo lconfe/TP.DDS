@@ -1,5 +1,6 @@
+import entidad.POI;
 
-public class CGP extends Poi
+public class CGP extends POI
 {
 	private int comuna;
 	
