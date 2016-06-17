@@ -1,6 +1,7 @@
 package entidad;
 
 import entidad.Ent_GeoPos;
+import temporal.Disponibilidad;
 import entidad.Ent_Dir;
 
 public class Ent_POI
@@ -11,16 +12,13 @@ public class Ent_POI
 /*Falta revisar lo que sigue*/
 	private String descripcion;
 
-	private Object disponibilidades[] = null;/*	private col disponibilidades */
-	private Object feriados[] = null;/*  private col feriados*/
+	private Object disponibilidad = null; /*private instancia Disponibilidad*/
 	private String etiquetas[]=null; /*para la busqueda*/
-	
 	private String rubro;
 	
 	public Ent_POI (int capacidadInicial)
 	{
-		disponibilidades = new Object[capacidadInicial];
-		feriados = new Object[capacidadInicial];
+		disponibilidad = new Disponibilidad();
 	}
 
 	
